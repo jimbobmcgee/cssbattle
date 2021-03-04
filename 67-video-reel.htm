@@ -1,0 +1,44 @@
+<div class="a">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div class="b">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div class="a">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div class="b">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<style>
+  body {    
+    margin: 0 -95px;
+    background: #5DBCF9;
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    gap: 10px;
+  }
+
+  .a { margin-top: -30px; }
+  .b { margin-top: -80px; }
+  
+  .a, .b {
+    display: grid;
+    grid-template-rows: repeat(3, 110px);
+    gap: 40px;
+  } 
+  .a div, .b div {
+    height: 100%;
+    width: 100%;
+    background: #191919;    
+  }
+</style>
