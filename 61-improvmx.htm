@@ -1,0 +1,101 @@
+<div id="boat">
+  <div id="bridge" class="cx"></div>
+  <div id="super" class="cx"></div>
+  <div id="hull" class="cx center">
+    <div id="tl"  class="line"></div>
+    <div id="tr"  class="line"></div>
+    <div id="bl"  class="line"></div>
+    <div id="br"  class="line"></div>
+    <div id="mid" class="line"></div>
+  </div>
+  <div id="water" class="cx"></div>
+  <div id="wave" class="cx"></div>
+</div>
+
+<style>
+  html, body {
+    background: #191919;
+    height: 100%;
+  }
+  body, .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #boat {    
+    width: 200px;
+    height: 168px;
+    position: relative;
+    transform: translateY(-8px);
+    overflow: hidden;
+  }
+  
+  .cx {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #water, #wave, .line {
+    height: 10px;
+    background: #5DBCF9;
+    position: absolute;
+  }
+  #water {
+    width: 100%;
+    bottom: 20px;
+    box-shadow: 0 0 0 10px #191919;
+  }
+  #wave {
+    bottom: 0px;
+    width: 55%;
+  }
+  #hull {    
+    width: 76%;
+    bottom: 30px;
+    height: 78px;
+  }
+  #tl {
+    width: 90px;
+    transform:            
+      rotate(-30deg)
+      translate(-25px, -29px);
+  }
+  #tr {
+    width: 90px;
+    transform: 
+      rotate(30deg)
+      translate(25px, -29px);
+  }
+  #bl {
+    width: 40px;
+    transform: 
+      rotate(60deg)
+      translate(-5px, 65px);
+  }
+  #br {
+    width: 40px;
+    transform:      
+      rotate(-60deg)
+      translate(5px, 65px);
+  }
+  #mid {
+    width: 60px;
+    transform: rotate(90deg)
+  }
+  #super, #bridge {
+    background: #191919;
+    border: 10px solid #5DBCF9;
+    border-bottom: none;
+  }
+  #super {
+    width: 80px;
+    height: 50px;
+    transform: translate(-50%, 30px);
+  }
+  #bridge {
+    width: 30px;
+    height: 20px
+  }
+  
+</style>
