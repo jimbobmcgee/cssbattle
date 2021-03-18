@@ -1,0 +1,64 @@
+<div id="wool-n"  class="w"></div>
+<div id="wool-nw" class="w"></div>
+<div id="wool-ne" class="w"></div>
+<div id="wool-e"  class="w"></div>
+<div id="wool-w"  class="w"></div>
+<div id="wool-sw" class="w"></div>
+<div id="wool-se" class="w"></div>
+<div id="wool-s"  class="w"></div>
+<div id="sheep"> <div id="face"></div> </div>
+<div id="eye-l"></div>
+<div id="eye-r"></div>
+
+<style>
+  html, body, #face { 
+    background: #243D83; 
+  }  
+  #sheep, #face, .w, #eye-l, #eye-r {
+    position: absolute;
+  }
+  #sheep, .w, #eye-l, #eye-r {
+    background: #6592CF;    
+  }
+  .w, #eye-l, #eye-r {
+    border-radius: 50%;
+  }
+  .w {
+    width: 60px;
+    left: 170px;
+    top:  125px;
+    height: 50px;    
+  }
+  #wool-n  { transform: translateY(-60px); }
+  #wool-s  { transform: translateY(60px); }
+  #wool-e  { transform: rotate(90deg) translateY(-60px); }
+  #wool-w  { transform: rotate(90deg) translateY(60px); }
+  #wool-ne { transform: rotate(45deg) translateY(-57px); }
+  #wool-nw { transform: rotate(135deg) translateY(57px); }
+  #wool-se { transform: rotate(135deg) translateY(-57px); }
+  #wool-sw { transform: rotate(45deg) translateY(57px); }
+  
+  #sheep {
+    width: 80px;
+    height: 60px;
+    left: 160px;
+    top: 133px;
+    overflow: hidden;    
+  }
+  
+  #face {    
+    width: 60px;
+    height: 42px;
+    left: 10px;
+    border-radius: 0 0 30px 30px;
+  }
+  
+  #eye-l, #eye-r {
+    width: 10px;
+    height: 10px;
+    left: 195px;
+    top: 130px
+  }
+  #eye-l { transform: translateX(-10px) }
+  #eye-r { transform: translateX(10px) }
+</style>
