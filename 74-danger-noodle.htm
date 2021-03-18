@@ -1,0 +1,100 @@
+<div id="c1" class="cm"><div class="cs"></div></div>
+<div id="v1" class="vm"><div></div></div>
+<div id="c2" class="cm"><div class="cn"></div></div>
+<div id="v2" class="vm"><div></div></div>
+<div id="c3" class="cm"><div class="cs"></div></div>
+<div id="v3" class="vm"><div></div></div>
+<div id="c4" class="cm"><div class="cn"></div></div>
+<div id="v4" class="vm"><div></div></div>
+<div id="c5" class="cm"><div class="cs"></div></div>
+<div id="v5" class="vm"><div></div></div>
+<div id="c6" class="cm"><div class="cn"></div></div>
+<div id="h1" class="hm"><div></div></div>
+<div id="face"><div id="eye-n"></div><div id="eye-s"></div></div>
+
+<style>
+  body, #eye-n, #eye-s { 
+    margin: 0;
+    background: #191919;
+  } 
+  
+  .cn, .cs, #eye-n, #eye-s {
+    border-radius: 50%;
+  }
+  
+  div { position:absolute; }
+  
+  .hm, .cm, .vm {
+    overflow: hidden;
+  }
+  
+  .hm, .cm {
+    width: 70px;
+    height: 35px;    
+  }
+  .vm {
+    width: 20px;
+    height: 155px;
+  }
+  
+  .cn, .cs {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    box-shadow:
+      0 0 0 5px #E08027,
+      0 0 0 15px #191919,
+      0 0 0 20px #E08027;
+  }  
+  .cs { transform: translate(-50%, -20px) }
+  .cn { transform: translate(-50%, 20px) }
+  
+  #c1 { top: 130px; left: -35px; }
+  #c2 { top: 40px;  left: 15px }
+  #c3 { top: 230px; left: 65px }
+  #c4 { top: 40px;  left: 115px }
+  #c5 { top: 230px; left: 165px }  
+  #c6 { top: 140px; left: 215px; width: 30px }  
+  
+  #c6 .cn { left: 35px; }
+    
+  .vm div {
+    width: 10px;
+    height: 100%;
+    left: 5px;
+  }
+  .hm div { 
+    width: 100%;
+    height: 10px;
+    top: 5px;
+  }
+  .hm div, .vm div {
+    box-shadow: 0 0 0 5px #E08027;
+  }
+
+  #v1 { top: 75px;  left: 15px;  height: 55px }
+  #v2 { top: 75px;  left: 65px }
+  #v3 { top: 75px;  left: 115px }
+  #v4 { top: 75px;  left: 165px }
+  #v5 { top: 175px; left: 215px; height: 55px }
+   
+  #h1 { top: 140px; left: 245px; width: 30px }
+  
+  #face {
+    width: 50px;
+    height: 30px;
+    top: 135px;
+    left: 265px;
+    background: #E08027;
+    border-radius: 20px 30px 30px 20px
+  }
+  
+  #eye-n, #eye-s {
+    width: 10px;
+    height: 10px;
+    right: 10px;
+    transform: translate(-50% -50%);
+  }
+  #eye-n { top: 2px }
+  #eye-s { bottom: 2px }
+</style>
