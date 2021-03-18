@@ -1,0 +1,102 @@
+<div id="x">
+  <div id="ear-l"></div>
+  <div id="ear-r"></div>
+  <div id="face">
+    <div id="hair"></div>
+    <div id="eye-l"></div>
+    <div id="eye-r"></div>
+    <div id="mouth">
+      <div id="mask">
+      	<div id="nos-l"></div>
+      	<div id="nos-r"></div>
+      </div>
+    </div>
+    <div id="nos"></div>
+  </div>
+</div>
+
+
+<style>
+  body { 
+    height: 100%;
+    background: #F3AC3C; 
+    margin: 0;
+  } 
+  body, #x, #face, #mask {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }  
+  #x, #mask { 
+    position: relative 
+  }  
+  
+  #ear-l, #ear-r, #eye-l, #eye-r, 
+  #mouth, #nos, #nos-l, #nos-r { 
+    position: absolute 
+  }    
+  #ear-l, #ear-r, #eye-l, #eye-r, #hair, #nos {
+    background: #1A4341;
+  }
+  #ear-l, #ear-r, #eye-l, #eye-r, #nos-l, #nos-r {
+    border-radius: 50%;
+  }
+  #eye-l, #eye-r, #nos-l, #nos-r {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #face {
+    width: 150px;
+    height: 150px;
+    background: #998235;
+    border-radius: 50% 50% 60px 60px;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  #hair {
+    width: 44px;
+    height: 44px;
+    transform: translateY(-80px) rotate(45deg)
+  }
+  
+  #ear-l, #ear-r {
+    width: 40px;
+    height: 40px;
+    top: 0;
+    box-shadow: 0 0 0 10px #998235;
+  }  
+  #ear-l { left: 0; }
+  #ear-r { right: 0; }
+  
+  #mouth { 
+    width: 100px;
+    height: 40px;
+    background: #fff;
+    bottom: 15;
+    border-radius: 25px 25px 60px 60px;
+  }
+  
+  #mask { 
+    margin-top: 10px;
+    height:20px;
+    overflow: hidden;
+  }
+  
+  #nos { 
+    width: 10px;
+    height: 20px;
+    transform: translateY(20px)
+  }
+  
+  #nos-l, #nos-r {
+    top: -10;
+    box-shadow: 0 0 0 10px #1A4341;    
+  }
+  #nos-l { transform: translateX(-15px) }
+  #nos-r { transform: translateX(15px) }
+  
+  #eye-l { transform: translate(-40px,-5px) }
+  #eye-r { transform: translate(40px,-5px) }
+</style>
