@@ -1,0 +1,100 @@
+<div id="outer">  
+  <div id="ear-l" class="ear g">
+    <div class="ear d"></div>
+  </div>
+  <div id="ear-r" class="ear g">
+    <div class="ear d"></div>
+  </div>
+  <div id="head"></div>
+  <div id="face">
+    <div id="eye-l" class="eye d"></div>
+    <div id="eye-r" class="eye d"></div>
+    <div id="tusks"></div>
+  </div>
+  <div id="trunk"></div>
+</div>
+
+<style>
+  html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #998235;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  #outer { 
+    width: 300px;
+    height: 180px;
+    position: relative;
+  }
+  .ear, .eye, #head, #face, #tusks, #trunk {
+    position: absolute; 
+  }
+  
+  .g, #head  { background: #1A4341 }
+  .d, #trunk { background: #0B2429 }
+  
+  #head, #trunk, #tusks {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #head, #tusks, .ear, .eye {
+    border-radius: 50%;
+  }
+  
+  .ear {
+    width: 80px;
+    height: 180px;
+  }
+  #ear-l, #ear-r {
+    overflow: hidden;
+  }
+  #ear-r {
+    right: 0px;
+  }
+  #ear-l div {
+    left: 16px;
+  }
+  #ear-r div {
+    right: 16px;
+  }
+  #head {
+    width: 180px;
+    height: 180px;
+  }
+  #face {
+    width: 100%;
+    height: 100px;
+    margin-top: 90px;
+    overflow: hidden;
+  }
+  .eye {    
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    box-shadow: 0 0 0 10px #998235;    
+  }
+  #eye-l {
+    left: 110px;    
+  }
+  #eye-r {
+    right: 110px;
+  }
+  #tusks {
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+	box-shadow: 0 0 0 20px #fff;
+    transform: translate(-50%, 50%);
+  }
+  #trunk {
+    width: 40px;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    top: 120px;
+  }
+</style>
