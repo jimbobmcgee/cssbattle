@@ -1,0 +1,52 @@
+<div id="w">
+  <div id="sun"></div>
+  <div id="hill-l"></div>
+  <div id="hill-r"></div>
+</div>
+  
+<style>
+  body { 
+    background: #191919;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+  #w {
+    width: 150px;
+    height: 200px;
+    background: #F2AD43;
+    border-radius: 75px 75px 20px 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #sun, #hill-l, #hill-r {
+    border-radius: 50%;
+    position: absolute;
+  }   
+  
+  #hill-l, #hill-r {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+  }
+  #hill-l { 
+    left: -100px;
+    background: #E08027;
+  }
+  #hill-r { 
+    right: -100px;
+    background: #824B20;
+  }
+  
+  #sun {
+    width: 60px;
+    height: 60px;
+    background: #FFF58F;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+</style>
